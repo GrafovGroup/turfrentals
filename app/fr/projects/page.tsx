@@ -1,0 +1,9 @@
+import type { Metadata } from 'next';
+import { ArrowRight } from 'lucide-react';
+import { servicesFr } from '@/lib/seo-content-fr';
+import type { ServiceSlug } from '@/lib/seo-content';
+import { SiteHeader } from '@/components/site-header';
+import { FrenchCta, FrenchFooter } from '@/components/french-shell';
+export const metadata:Metadata={title:'Galerie d’utilisations du gazon temporaire | TurfRentals.ca',description:'Découvrez des exemples de gazon synthétique pour mariages, salons, sports, tournages, festivals et terrasses.',alternates:{canonical:'/fr/projects',languages:{'en-CA':'/projects','fr-CA':'/fr/projects'}},openGraph:{title:'Galerie d’utilisations du gazon temporaire',description:'Des exemples pour imaginer votre aménagement événementiel.',url:'/fr/projects',locale:'fr_CA'}};
+const gallery:ServiceSlug[]=['wedding-turf-rentals','trade-show-turf-rentals','sports-turf-rentals','film-production-turf','festival-turf-rentals','patio-rooftop-turf-rentals'];
+export default function Projects(){return <main lang="fr-CA"><SiteHeader french/><section className="editorial-hero"><div><p className="eyebrow">Galerie d’utilisations</p><h1>Imaginez ce que le gazon peut transformer.</h1><p>Découvrez des concepts d’aménagement et les questions à prévoir. Ces images illustrent des utilisations possibles; elles ne représentent pas des études de cas ni des installations réalisées par TurfRentals.ca.</p><a href="/fr/contact">Planifier mon projet <ArrowRight/></a></div><figure><img src="/services/festival-turf.webp" alt="Exemple de salon de festival sur gazon temporaire"/></figure></section><section className="project-gallery">{gallery.map(slug=>{const s=servicesFr[slug];return <article key={slug}><figure><img loading="lazy" src={s.image} alt={s.imageAlt}/></figure><div><h2>{s.title}</h2><p>{s.description}</p><a href={`/fr/services/${slug}`}>Consulter le guide <ArrowRight/></a></div></article>})}</section><FrenchCta/><FrenchFooter/></main>}

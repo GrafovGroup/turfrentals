@@ -14,7 +14,7 @@ The shared contact form sends directly to the existing Formspree endpoint `mwlkq
 
 ## Languages
 
-English content includes service and location guides. `/fr` provides a French landing page, service overview and inquiry form; `/fr/privacy` provides the French privacy notice. All nine service guides and six city pages now have French counterparts at `/fr/services` and `/fr/locations`, with matching-page language switches and reciprocal language metadata. Other editorial pages remain English.
+English content includes service and location guides. `/fr` provides a French landing page, service overview and inquiry form; `/fr/privacy` provides the French privacy notice. All nine service guides and six city pages now have French counterparts at `/fr/services` and `/fr/locations`, with matching-page language switches and reciprocal language metadata. French versions of About, How It Works, Turf Options, Rental Cost, Gallery and Contact complete the remaining page coverage.
 
 ## Publication and backup
 

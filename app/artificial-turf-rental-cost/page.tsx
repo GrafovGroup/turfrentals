@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { ArrowRight } from 'lucide-react';
 import { CtaBand, PageHero, SiteFooter, SiteHeader } from '@/components/marketing-shell';
 
-export const metadata: Metadata = { title: 'Artificial Turf Rental Cost in Canada | Pricing Guide', description: 'Understand the factors that affect artificial turf rental pricing in Canada, including footprint, product, duration, delivery, access, installation, and removal.', alternates: { canonical: '/artificial-turf-rental-cost' } };
+export const metadata: Metadata = { title: 'Artificial Turf Rental Cost in Canada | Pricing Guide', description: 'Understand the factors that affect artificial turf rental pricing in Canada, including footprint, product, duration, delivery, access, installation, and removal.', alternates: { canonical: '/artificial-turf-rental-cost', languages: { 'en-CA': '/artificial-turf-rental-cost', 'fr-CA': '/fr/artificial-turf-rental-cost' } } };
 const factors = [
   ['Footprint', 'Total square footage, shape, cut-outs, and the number of separate areas.'],
   ['Turf selection', 'Appearance, pile, intended use, availability, and any application-specific requirements.'],

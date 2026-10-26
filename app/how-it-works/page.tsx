@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Check } from 'lucide-react';
 import { CtaBand, PageHero, SiteFooter, SiteHeader } from '@/components/marketing-shell';
 
-export const metadata: Metadata = { title: 'How Artificial Turf Rentals Work', description: 'Learn how TurfRentals.ca plans, delivers, installs, and removes temporary artificial turf for events and projects across Canada.', alternates: { canonical: '/how-it-works' } };
+export const metadata: Metadata = { title: 'How Artificial Turf Rentals Work', description: 'Learn how TurfRentals.ca plans, delivers, installs, and removes temporary artificial turf for events and projects across Canada.', alternates: { canonical: '/how-it-works', languages: { 'en-CA': '/how-it-works', 'fr-CA': '/fr/how-it-works' } } };
 const steps = [
   ['01', 'Share the outline', 'Send the city, dates, approximate dimensions, existing surface, application, venue access, and operating schedule. Photos and floor plans help.'],
   ['02', 'Review the site', 'We assess the footprint, traffic, exposure, transitions, furnishings, building rules, load-in route, and installation window.'],

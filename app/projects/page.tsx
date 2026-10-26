@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { ArrowRight } from 'lucide-react';
 import { CtaBand, PageHero, SiteFooter, SiteHeader } from '@/components/marketing-shell';
 
-export const metadata: Metadata = { title: 'Artificial Turf Rental Project Gallery', description: 'Explore representative artificial turf rental applications for weddings, events, trade shows, sports, festivals, film sets, activations, and rooftops.', alternates: { canonical: '/projects' } };
+export const metadata: Metadata = { title: 'Artificial Turf Rental Project Gallery', description: 'Explore representative artificial turf rental applications for weddings, events, trade shows, sports, festivals, film sets, activations, and rooftops.', alternates: { canonical: '/projects', languages: { 'en-CA': '/projects', 'fr-CA': '/fr/projects' } } };
 const gallery = [
   ['/services/wedding-turf.webp','Wedding ceremonies','Ceremony aisles, altar areas, tent floors, and reception lounges.','/services/wedding-turf-rentals'],
   ['/services/trade-show-turf.webp','Trade show exhibits','Precisely fitted booth flooring that integrates with exhibit structures.','/services/trade-show-turf-rentals'],

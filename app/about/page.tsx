@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Check } from 'lucide-react';
 import { CtaBand, PageHero, SiteFooter, SiteHeader } from '@/components/marketing-shell';
 
-export const metadata: Metadata = { title: 'About TurfRentals.ca', description: 'Learn how TurfRentals.ca approaches temporary artificial turf rentals, installation planning, and Canada-wide project coordination.', alternates: { canonical: '/about' } };
+export const metadata: Metadata = { title: 'About TurfRentals.ca', description: 'Learn how TurfRentals.ca approaches temporary artificial turf rentals, installation planning, and Canada-wide project coordination.', alternates: { canonical: '/about', languages: { 'en-CA': '/about', 'fr-CA': '/fr/about' } } };
 
 export default function AboutPage() { return <main><SiteHeader/><PageHero eyebrow="About TurfRentals.ca" title="Temporary turf planned as part of the whole project." intro="TurfRentals.ca helps event teams, agencies, producers, exhibitors, venues, and organizations plan temporary artificial grass installations across Canada." image="/services/brand-activation-turf.webp" imageAlt="Temporary artificial turf creating a public event space in a Canadian city plaza"/>
   <section className="index-intro"><div><p className="section-kicker">Our approach</p><h2>Clear scope before material reaches the site.</h2></div><p>Artificial turf may look simple once installed, but the result depends on accurate dimensions, the existing surface, venue rules, delivery access, supplier sequence, public use, weather exposure, and removal deadlines. Our process begins with those realities.</p></section>
