@@ -3,7 +3,7 @@ import { ArrowRight, Check, MapPin } from 'lucide-react';
 import { locations } from '@/lib/seo-content';
 import { CtaBand, PageHero, SiteFooter, SiteHeader } from '@/components/marketing-shell';
 
-export const metadata: Metadata = { title: 'Artificial Turf Rentals Across Canada | Service Areas', description: 'Canada-wide artificial turf rental coordination for events and temporary installations, including Toronto, Vancouver, Calgary, Montreal, Ottawa, and Edmonton.', alternates: { canonical: '/locations' } };
+export const metadata: Metadata = { title: 'Artificial Turf Rentals Across Canada | Service Areas', description: 'Canada-wide artificial turf rental coordination for events and temporary installations, including Toronto, Vancouver, Calgary, Montreal, Ottawa, and Edmonton.', alternates: { canonical: '/locations', languages: { 'en-CA': '/locations', 'fr-CA': '/fr/locations' } } };
 
 export default function LocationsPage() {
   return <main><SiteHeader/><PageHero eyebrow="Canada-wide service areas" title="Local installations. National coordination." intro="We plan temporary artificial turf rentals around the venue, schedule, surface, and access requirements of each project—whether it is one local installation or a routed multi-city program."/>

@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import { services } from '@/lib/seo-content';
 import { CtaBand, PageHero, SiteFooter, SiteHeader } from '@/components/marketing-shell';
 
-export const metadata: Metadata = { title: 'Artificial Turf Rental Services Across Canada', description: 'Explore artificial turf rental services for weddings, corporate events, trade shows, activations, sports, film, festivals, patios, and rooftops across Canada.', alternates: { canonical: '/services' } };
+export const metadata: Metadata = { title: 'Artificial Turf Rental Services Across Canada', description: 'Explore artificial turf rental services for weddings, corporate events, trade shows, activations, sports, film, festivals, patios, and rooftops across Canada.', alternates: { canonical: '/services', languages: { 'en-CA': '/services', 'fr-CA': '/fr/services' } } };
 
 export default function ServicesPage() {
   const focusedServices = Object.entries(services).filter(([slug]) => slug !== 'event-turf-rentals');

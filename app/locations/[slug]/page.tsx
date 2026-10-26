@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const place = locations[slug as LocationSlug];
   if (!place) return {};
-  return { title: `Artificial Turf Rentals in ${place.city} | TurfRentals.ca`, description: `Artificial turf and temporary grass rentals for events, activations, sports, and productions in ${place.city}, ${place.province}.`, alternates: { canonical: `/locations/${slug}` } };
+  return { title: `Artificial Turf Rentals in ${place.city} | TurfRentals.ca`, description: `Artificial turf and temporary grass rentals for events, activations, sports, and productions in ${place.city}, ${place.province}.`, alternates: { canonical: `/locations/${slug}`, languages: { 'en-CA': `/locations/${slug}`, 'fr-CA': `/fr/locations/${slug}` } } };
 }
 
 export default async function LocationPage({ params }: { params: Promise<{ slug: string }> }) {

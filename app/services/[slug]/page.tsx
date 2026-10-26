@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!service) return {};
   return {
     title: `${service.title} Across Canada | TurfRentals.ca`, description: service.description,
-    alternates: { canonical: `/services/${slug}` },
+    alternates: { canonical: `/services/${slug}`, languages: { 'en-CA': `/services/${slug}`, 'fr-CA': `/fr/services/${slug}` } },
     openGraph: { title: service.title, description: service.description, url: `/services/${slug}`, images: [{ url: service.image, alt: service.imageAlt }] },
   };
 }
