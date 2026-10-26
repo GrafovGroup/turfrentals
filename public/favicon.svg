@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="TurfRentals.ca">
+  <rect width="64" height="64" rx="15" fill="#B8EF36"/>
+  <rect x="5" y="5" width="54" height="54" rx="11" fill="#0A2113"/>
+  <path fill="#B8EF36" d="M14 15h36v10H37v26H27V25H14z"/>
+  <path fill="#F7F5EC" d="M18 44c4-7 7-10 11-13l-2 13H18Zm19-13c4 3 7 6 11 13H37V31Z"/>
+</svg>
